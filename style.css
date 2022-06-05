@@ -1,0 +1,90 @@
+.logo {
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link a{
+    text-transform: uppercase;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: all;
+    display: inline-block;
+}
+.link a:hover{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: red;
+    transform: 0.9s;
+}
+.navber{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: purple;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: all;
+    width: 100%;
+    margin: 1px;
+    border-radius: 5px;
+    position: fixed;
+}
+.navber:hover{
+    border-bottom: 5px brown dashed;
+    transform: 1s;
+}
+
+.menuBtn{
+    display: none;
+}
+.closeBtn{
+    display: none;
+    margin-right: 15px;
+}
+.closeBtn button{
+    font-size: 35px;
+    width: 40px;
+    background-color: purple;
+    border: none;
+    color: white;
+}
+.linkShow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p{
+    padding-top: 70px;
+}
+
+
+
+@media screen  and (max-width:900px){
+    .link{
+        display: none;
+    }
+    .menuBtn{
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 25px;
+        border: 1px solid white;
+        border-radius: 3px;
+        padding: 3px;
+    }
+    .menuBtn span{
+        width: 30px;
+        height: 2px;
+        background-color: white;
+        display: inline-block;
+        margin: 3px;
+    }
+}
